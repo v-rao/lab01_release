@@ -2,6 +2,8 @@ import os
 
 from autogen import ConversableAgent
 
+print("Hello World")
+
 agent = ConversableAgent(
     "chatbot",
     llm_config={"config_list": [{"model": "gpt-4o-mini", "api_key": os.environ.get("OPENAI_API_KEY")}]},
